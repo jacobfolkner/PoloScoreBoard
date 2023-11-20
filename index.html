@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <img id="logo" src="SportLogo_CMYK_Navy.png" alt="U.S.-Polo-ASSN-logo" />
+    <h1 id="title">U.S. POLO ASSN</h1>
+    <div class="container">
+      <div>
+        <h3>HOME</h3>
+        <h1 class="display" id="home-points">0</h1>
+      </div>
+      <div>
+        <h3>TIME</h3>
+        <h1 class="display" id="timer">0 : 0</h1>
+      </div>
+      <div>
+        <h3>GUEST</h3>
+        <h1 class="display" id="guest-points">0</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div id="home-buttons">
+        <button id="home-1" onclick="addPoints('home', 1)">+1</button>
+        <button id="home-2" onclick="addPoints('home', 2)">+2</button>
+      </div>
+      <div>
+        <button id="start" onclick="startTimer()">START</button>
+        <button id="stop" onclick="stopTimer()">STOP</button>
+        <button id="reset" onclick="resetTimer()">RESET</button>
+      </div>
+      <div id="guest-buttons">
+        <button id="guest-1" onclick="addPoints('guest', 1)">+1</button>
+        <button id="guest-2" onclick="addPoints('guest', 2)">+2</button>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+        <h3>GOALS</h3>
+        <ol id="home-goals">
+          <li>Jacob</li>
+          <li>Jacob</li>
+          <li>Jacob</li>
+          <li>Jacob</li>
+        </ol>
+      </div>
+      <div>
+        <h3>CHUKKER</h3>
+        <h1 class="display" id="chukker">1</h1>
+      </div>
+      <div>
+        <h3>GOALS</h3>
+        <ul id="guest-goals">
+          <li>Jacob</li>
+          <li>Jacob</li>
+          <li>Jacob</li>
+          <li>Jacob</li>
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
